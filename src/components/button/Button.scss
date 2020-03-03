@@ -1,0 +1,10 @@
+@import '../../assets/variables';
+
+.btn-primary {
+  width: 100%;
+  box-shadow: 2px 4px 6px $shadow;
+
+  &.submit {
+    line-height: 30px;
+  }
+}

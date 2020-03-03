@@ -1,0 +1,9 @@
+.form-group {
+  label {
+    font-size: 0.7rem;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+}
