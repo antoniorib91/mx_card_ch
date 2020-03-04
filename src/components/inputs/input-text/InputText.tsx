@@ -1,28 +1,26 @@
 import React from 'react';
 
-import '../input.scss';
 import { InputProps } from '../input';
-import { FormHelpers } from '../../../utils/form.helpers';
+
+import '../input.scss';
 
 type InputState = {};
  
 class InputText extends React.Component<InputProps, InputState> {
 
-  public id?: string;
-
-  componentDidMount = () => {
+  public componentDidMount() {
     this.inputInitId();
   }
 
-  inputInitId = () => {
-    this.id = this.props.id ? this.props.id : FormHelpers.generateRandomHash();
+  public inputInitId() {
+
   }
 
   render() { 
     return (
-      <div className="form-group">
-        <label htmlFor={this.id}>{this.props.label}</label>
-        <input type="text" className="form-control" id={this.id} />
+      <div>
+        <label htmlFor={this.props.id}>{this.props.label}</label>
+        <input type="text" className="form-control custom" id={this.props.id} />
       </div>
     );
   }

@@ -1,9 +1,4 @@
-.form-group {
-  label {
-    font-size: 0.7rem;
-  }
-
-  .form-control:focus {
-    box-shadow: none;
-  }
+label {
+  font-size: 0.7rem;
+  min-height: 14px;
 }
